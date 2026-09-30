@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: visionary-key-manager
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: ADMIN_TOKEN
+        sync: false
+      - key: PORT
+        value: 10000
